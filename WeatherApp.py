@@ -13,8 +13,8 @@ def test_function(entry):
 def format_response(weather):
     try:
         name = weather['city']['name']
-        desc = weather['list'][0]['main']['temp']
-        temp = weather['list'][0]['weather'][0]['description']
+        temp = weather['list'][0]['main']['temp']
+        desc = weather['list'][0]['weather'][0]['description']
 
         final_str =  'City: %s \nConditions: %s\nTemperature (F): %s' % (name,desc,temp)
 
